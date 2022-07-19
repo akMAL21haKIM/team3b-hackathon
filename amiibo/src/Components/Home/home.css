@@ -1,0 +1,12 @@
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
