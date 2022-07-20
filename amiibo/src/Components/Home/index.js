@@ -3,8 +3,6 @@ import "./home.css";
 import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
 import FAQ from "./FAQ/FAQ";
-import mainHeader from "./asset/lineup.jpg";
-import { Link } from "react-router-dom";
 import Carousel, { CarouselItem } from "../Categories/Carousel";
 import animal_crossing from "./asset/animal_crossing.png";
 import legend_of_zelda from "./asset/legend_of_zelda.png";

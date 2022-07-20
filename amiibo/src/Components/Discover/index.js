@@ -1,13 +1,15 @@
 import React, { Component, useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
+import Nav from "../Nav/nav";
 
 const Discover = () => {
   var [data, setData] = useState([]);
   var [search, setSearch] = useState("");
-  console.log(data);
+  const [seriesName, setSeriesName] = useState([""]);
+  const navigation = useNavigate();
 
   useEffect(() => {
     axios
@@ -58,13 +60,19 @@ const Discover = () => {
           </form>
         </div>
         <h3>Choose the series</h3>
-        <p>
-          <div>
-            {data.map((anything) => (
-              <p>{anything.name}</p>
-            ))}
-          </div>
-        </p>
+        <div>
+          {data.map((res, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                navigation(`/details/${res.name}`);
+                setSeriesName(res.name);
+              }}
+            >
+              {res.name}
+            </button>
+          ))}
+        </div>
       </div>
       <Footer />
     </div>
