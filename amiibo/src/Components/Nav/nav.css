@@ -44,4 +44,19 @@
 
 .menu-buttons button:hover {
   background-color: purple;
+  color: white;
+}
+
+.home-btn > button.active {
+  background-color: initial;
+  background-position: 0 0;
+  color: purple;
+  opacity: 0.5;
+}
+
+.discover-btn > button.active {
+  background-color: initial;
+  background-position: 0 0;
+  color: purple;
+  opacity: 0.5;
 }

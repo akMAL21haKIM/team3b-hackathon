@@ -3,6 +3,10 @@
   height: 50vh;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .background {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url(./asset/lineup.jpg);
@@ -78,4 +82,8 @@ button:hover {
 .section-cont {
   height: 100vh;
   color: black;
+}
+
+.carousel-cont {
+  margin-top: 10%;
 }

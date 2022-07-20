@@ -17,13 +17,13 @@ const Nav = () => {
         <div className="grid-item">
           <div className="menu-buttons">
             <Link to="/">
-              <button>Home</button>
+              <button id="home-btn">Home</button>
             </Link>
             <Link to="/discover">
-              <button>Discover</button>
+              <button id="discover-btn">Discover</button>
             </Link>
             <Link to="/Discover">
-              <button>News</button>
+              <button id="news-btn">News</button>
             </Link>
           </div>
         </div>
