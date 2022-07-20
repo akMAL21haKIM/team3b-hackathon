@@ -1,0 +1,47 @@
+.d-flex {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* padding: 10px; */
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 20px 20px 0px 20px;
+  font-size: 30px;
+}
+
+.logo {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  width: 21%;
+  margin-left: 25px;
+}
+
+.menu-buttons {
+  text-align: right;
+}
+
+.menu-buttons button {
+  width: 20%;
+  margin-right: 30px;
+  font-size: 1rem;
+  padding: 1rem;
+  outline: none;
+  background-color: white;
+  color: black;
+  border: none;
+  border-bottom: 4px solid purple;
+}
+
+.menu-buttons button:hover {
+  background-color: purple;
+}

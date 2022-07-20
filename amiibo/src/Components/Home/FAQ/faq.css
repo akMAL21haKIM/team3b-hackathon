@@ -1,0 +1,12 @@
+.faq-cont {
+  width: 80vh;
+  color: black;
+  display: center;
+  align-items: center;
+  justify-content: center;
+  margin: 15% auto 5%;
+}
+
+.faq-cont h1 {
+  color: purple;
+}
