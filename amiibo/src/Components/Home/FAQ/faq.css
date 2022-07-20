@@ -1,10 +1,9 @@
 .faq-cont {
-  width: 80vh;
-  color: black;
-  display: center;
-  align-items: center;
   justify-content: center;
+  color: black;
+  align-items: center;
   margin: 15% auto 5%;
+  flex-direction: column;
 }
 
 .faq-cont h1 {
