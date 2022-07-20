@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
 import Nav from "../Nav/nav";
+import "./discover.css";
 
 const Discover = () => {
   var [data, setData] = useState([]);
@@ -60,9 +61,10 @@ const Discover = () => {
           </form>
         </div>
         <h3>Choose the series</h3>
-        <div>
+        <div className="discoverS">
           {data.map((res, index) => (
             <button
+              className="discoverS-btn"
               key={index}
               onClick={() => {
                 navigation(`/details/${res.name}`);
