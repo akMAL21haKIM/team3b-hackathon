@@ -28,7 +28,6 @@
   z-index: 1;
 }
 
-/*navbar logo*/
 .logo {
   text-align: left;
   margin: 0;
@@ -81,12 +80,10 @@
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
   .grid-item {
     position: fixed;
   }
 
-=======
   .logo img {
     width: 30%;
     padding-top: 15px !important;
@@ -94,7 +91,6 @@
 }
 
 @media (max-width: 768px) {
->>>>>>> e67c70c2cddd5f63029a3ae6b58c34c5cbc6b21c
   .menu-buttons:not(.visible) {
     display: none;
   }
