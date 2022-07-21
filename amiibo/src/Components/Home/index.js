@@ -37,10 +37,10 @@ const Home = () => {
               Horizons game.
             </h3>
             <br />
-            <div className="search d-flex">
+            {/* <div className="search d-flex">
               <input type="text" placeholder="Find character" />
               <button onClick={handleSearch}>Search</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -54,6 +54,7 @@ const Home = () => {
             );
           })}
         </Carousel>
+        <br />
       </div>
       <FAQ />
       <Footer />
