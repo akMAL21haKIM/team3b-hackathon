@@ -5,14 +5,16 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  /* padding: 10px; */
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
   border: none;
   padding: 20px 20px 0px 20px;
   font-size: 30px;
+  right: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -22,8 +24,16 @@
 }
 
 .logo img {
-  width: 21%;
+  width: 25%;
   margin-left: 25px;
+  padding-top: 15px !important;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 30%;
+    padding-top: 15px !important;
+  }
 }
 
 .menu-buttons {
@@ -36,15 +46,10 @@
   font-size: 1rem;
   padding: 1rem;
   outline: none;
-  background-color: white;
+  background-color: transparent;
   color: black;
   border: none;
   border-bottom: 4px solid purple;
-}
-
-.menu-buttons button:hover {
-  background-color: purple;
-  color: white;
 }
 
 .home-btn > button.active {
@@ -59,4 +64,50 @@
   background-position: 0 0;
   color: purple;
   opacity: 0.5;
+}
+
+.grid-item__icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-buttons:not(.visible) {
+    display: none;
+  }
+  .menu-buttons button {
+    display: block;
+    width: 100%;
+  }
+  .menu-buttons.icon {
+    float: right;
+    display: block;
+  }
+  .grid-item__icon {
+    display: inline-block;
+  }
+  .grid-item__icon div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+@media() {
+}
+
+@media screen and (max-width: 768px) {
+  .menu-buttons.responsive {
+    position: relative;
+  }
+  .menu-buttons.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu-buttons.responsive {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
