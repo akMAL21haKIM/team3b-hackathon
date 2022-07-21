@@ -1,5 +1,6 @@
 .grid-container-chara {
-  display: grid;
+  display: flex;
+  justify-content: center;
   grid-template-columns: auto auto auto;
   padding: 5px;
   margin: 5% auto;
