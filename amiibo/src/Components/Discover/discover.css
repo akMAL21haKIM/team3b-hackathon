@@ -2,6 +2,10 @@
   margin: 16% auto;
 } */
 
+.discover-cont {
+  background-image: url("https://i.imgur.com/NGTcZ55.jpeg");
+}
+
 .search {
   border: 3px solid white;
   border-radius: 1rem;
@@ -27,6 +31,7 @@ input {
 button:hover {
   cursor: pointer;
   color: white;
+  background-color: rgba(181, 66, 185);
 }
 
 .search button {
@@ -55,6 +60,14 @@ button:hover {
   width: 300px;
   height: 300px;
   justify-content: space-around;
+  font-size: 26px;
+  font-family: "Caveat Brush", cursive;
+  background-color: aliceblue;
+}
+
+.discoverS-btn:hover {
+  background-image: url("https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/others_3/amiibo_4/H2x1_Amiibo_main_image1600w.jpg");
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 1);
 }
 
 .grid-container-discover {
