@@ -1,6 +1,6 @@
-.discover-cont {
+/* .discover-cont {
   margin: 16% auto;
-}
+} */
 
 .search {
   border: 3px solid white;
@@ -39,4 +39,59 @@ button:hover {
   background-color: purple;
   color: white;
   outline: none;
+}
+
+.discoverS {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.discoverS-btn {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  justify-content: space-around;
+}
+
+.grid-container-discover {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+  margin: 5% auto;
+  flex-wrap: wrap;
+  /* min-height: 70%; */
+}
+
+.grid-item-discover {
+  /* background-color: purple; */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.grid-item-discover button {
+  width: 350px;
+  height: 350px;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.grid-item-discover button:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+.grid-item-discover img {
+  width: 200px;
+  height: 250px;
 }

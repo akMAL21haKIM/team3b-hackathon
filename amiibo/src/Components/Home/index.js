@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
 import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
@@ -15,6 +15,14 @@ const image = [
 ];
 
 const Home = () => {
+  const [dataSearch, setDataSearch] = useState([]);
+  var [search, setSearch] = useState("");
+
+  const handleSearch = (res) => {
+    res.preventDefault();
+    //setData(dataSearch.filter((x) => x.name.includes(search)));
+  };
+
   return (
     <div>
       <Navigation />
@@ -31,7 +39,7 @@ const Home = () => {
             <br />
             <div className="search d-flex">
               <input type="text" placeholder="Find character" />
-              <button>Search</button>
+              <button onClick={handleSearch}>Search</button>
             </div>
           </div>
         </div>
