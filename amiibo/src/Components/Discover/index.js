@@ -20,6 +20,10 @@ const Discover = () => {
       });
   }, []);
 
+  let getval = (x) => {
+    setSearch(x.target.value);
+  };
+
   const handleSearch = (res) => {
     res.preventDefault();
     setData(
@@ -27,27 +31,17 @@ const Discover = () => {
         x.name.toLowerCase().includes(search.toLowerCase())
       )
     );
-    // setData(
-    //   dataSearch.filter((x) =>
-    //     x.character.toLowerCase().includes(search.toLowerCase())
-    //   )
-    // );
-  };
-
-  let getval = (x) => {
-    setSearch(x.target.value);
   };
 
   return (
     <div>
       <Navigation />
       <div className="discover-cont">
+        <br></br>
         <h1>Discover your desired Series</h1>
         <div className="search d-flex">
-          <div className="search d-flex">
-            <input type="text" placeholder="Find Series" onChange={getval} />
-            <button onClick={handleSearch}>Search</button>
-          </div>
+          <input type="text" placeholder="Find Series" onChange={getval} />
+          <button onClick={handleSearch}>Search</button>
         </div>
         <h3>Choose the series</h3>
         <div className="grid-container-discover">
