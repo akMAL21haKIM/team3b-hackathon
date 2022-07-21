@@ -3,31 +3,20 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
-
-import Nav from "../Nav/nav";
 import "./discover.css";
-
 
 const Discover = () => {
   var [data, setData] = useState([]);
   const [dataSearch, setDataSearch] = useState([]);
   var [search, setSearch] = useState("");
   const navigation = useNavigate();
-  var resetArray = [];
-
-  useEffect(() => {
-    axios
-      .get("https://amiiboapi.com/api/amiiboseries/", {})
-      .then(function (response) {
-        setData(response.data.amiibo);
-      });
-  }, []);
 
   useEffect(() => {
     axios
       .get("https://amiiboapi.com/api/amiiboseries/", {})
       .then(function (response) {
         setDataSearch(response.data.amiibo);
+        setData(response.data.amiibo);
       });
   }, []);
 
@@ -52,17 +41,19 @@ const Discover = () => {
           </div>
         </div>
         <h3>Choose the series</h3>
-        <div className="discoverS">
+        <div className="grid-container-discover">
           {data.map((res, index) => (
-            <button
-              className="discoverS-btn"
-              key={index}
-              onClick={() => {
-                navigation(`/details/${res.name}`);
-              }}
-            >
-              {res.name}
-            </button>
+            <div className="grid-item-discover">
+              <button
+                className="discoverS-btn"
+                key={index}
+                onClick={() => {
+                  navigation(`/details/${res.name}`);
+                }}
+              >
+                <h3> {res.name} </h3>
+              </button>
+            </div>
           ))}
         </div>
       </div>
