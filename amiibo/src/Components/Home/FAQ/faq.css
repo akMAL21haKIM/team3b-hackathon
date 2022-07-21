@@ -3,7 +3,11 @@
   color: black;
   align-items: center;
   margin: auto;
-  width: 80vh;
+}
+
+.set-width {
+  width: 50%;
+  margin: auto;
 }
 
 .faq-cont h1 {
@@ -12,5 +16,33 @@
 
 .faq {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), purple;
-  height: 580px;
+  height: 550px;
+}
+
+@media (max-width: 800px) {
+  .faq {
+    height: 650px;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq {
+    height: 800px;
+  }
+
+  .set-width {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .faq {
+    height: 1000px;
+  }
+
+  .set-width {
+    width: 70%;
+    margin: auto;
+  }
 }
