@@ -1,6 +1,6 @@
-.discover-cont {
+/* .discover-cont {
   margin: 16% auto;
-}
+} */
 
 .search {
   border: 3px solid white;
@@ -39,4 +39,20 @@ button:hover {
   background-color: purple;
   color: white;
   outline: none;
+}
+
+.discoverS {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.discoverS-btn {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  justify-content: space-around;
 }
