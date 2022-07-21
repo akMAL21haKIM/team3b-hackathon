@@ -7,6 +7,8 @@ h1 {
 .discover-cont {
   background-image: url("https://i.imgur.com/NGTcZ55.jpeg");
   color: rgba(117, 7, 117, 0.809);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*search bar*/
@@ -53,22 +55,23 @@ button:hover {
 
 /*main button container*/
 .grid-container-discover {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 5px;
-  margin: 5% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px auto;
   flex-wrap: wrap;
-  min-height: 70%;
 }
 
 /*button conatainer*/
 .grid-item-discover {
-  padding: 20px;
-  width: 70%;
-  margin: auto;
-  flex-wrap: wrap;
-  text-align: center;
+  /* background-color: purple; */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  margin: 15px 15px 15px;
   border-radius: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .grid-item-discover button {

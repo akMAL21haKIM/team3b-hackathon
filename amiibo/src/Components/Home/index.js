@@ -4,16 +4,12 @@ import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
 import FAQ from "./FAQ/FAQ";
 import Carousel, { CarouselItem } from "../Categories/Carousel";
-import animal_crossing from "./asset/animal_crossing.png";
+import pokemon from "./asset/pokemon.png";
 import legend_of_zelda from "./asset/legend_of_zelda.png";
 import super_mario from "./asset/super_mario.png";
 import { Link } from "react-router-dom";
 
-const image = [
-  { id: animal_crossing },
-  { id: legend_of_zelda },
-  { id: super_mario },
-];
+const image = [{ id: pokemon }, { id: legend_of_zelda }, { id: super_mario }];
 
 const Home = () => {
   const [dataSearch, setDataSearch] = useState([]);

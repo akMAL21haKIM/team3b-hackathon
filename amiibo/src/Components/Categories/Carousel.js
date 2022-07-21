@@ -45,7 +45,7 @@ const Carousel = ({ children }) => {
   return (
     <div
       {...handlers}
-      className="carousel"
+      className="carousel relative"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -62,6 +62,7 @@ const Carousel = ({ children }) => {
           onClick={() => {
             updateIndex(activeIndex - 1);
           }}
+          className="absolute-left"
         >
           Prev
         </button>
@@ -83,6 +84,7 @@ const Carousel = ({ children }) => {
           onClick={() => {
             updateIndex(activeIndex + 1);
           }}
+          className="absolute-right"
         >
           Next
         </button>
