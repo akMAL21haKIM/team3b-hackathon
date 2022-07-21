@@ -4,6 +4,7 @@
 
 .discover-cont {
   background-image: url("https://i.imgur.com/NGTcZ55.jpeg");
+  color: rgba(117, 7, 117, 0.809);
 }
 
 .search {
@@ -76,7 +77,7 @@ button:hover {
   padding: 5px;
   margin: 5% auto;
   flex-wrap: wrap;
-  /* min-height: 70%; */
+  min-height: 70%;
 }
 
 .grid-item-discover {
@@ -97,11 +98,12 @@ button:hover {
   border: none;
   transform: scale(1);
   transition: transform 0.5s;
+  color: purple;
 }
 
 .grid-item-discover button:hover {
   transform: scale(1.1);
-  color: black;
+  color: purple;
 }
 
 .grid-item-discover img {

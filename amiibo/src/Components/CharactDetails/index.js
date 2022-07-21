@@ -22,7 +22,7 @@ const CharactDetails = () => {
     <div>
       <Navigation />
       <br></br>
-      <h1>Series' Characters</h1>
+      <h1>Characters related to {character}</h1>
       <div className="grid-container-chara">
         {data.map((res, index) => (
           <div key={index}>
