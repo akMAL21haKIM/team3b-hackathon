@@ -34,7 +34,11 @@ const Details = () => {
 
   const handleSearch = (res) => {
     res.preventDefault();
-    setData(dataSearch.filter((x) => x.name.includes(search)));
+    setData(
+      dataSearch.filter((x) =>
+        x.name.toLowerCase().includes(search.toLowerCase())
+      )
+    );
   };
 
   return (
