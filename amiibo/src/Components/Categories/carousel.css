@@ -13,10 +13,20 @@
   align-items: center;
   justify-content: center;
   object-fit: contain;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   color: #fff;
+  overflow: hidden;
 }
+
+.carousel-item > .item > img {
+  margin: auto;
+}
+/*@media (max-width: 768px) {
+  .carousel-item {
+    max-width: 560px;
+  }
+}*/
 
 .indicators {
   display: flex;
