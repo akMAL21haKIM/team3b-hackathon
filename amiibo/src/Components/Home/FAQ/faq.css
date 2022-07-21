@@ -1,9 +1,14 @@
 .faq-cont {
-  width: 80vh;
+  /* width: 80vh; */
   color: black;
   display: center;
   align-items: center;
   justify-content: center;
+  margin: auto;
+}
+
+.set-width {
+  width: 50%;
   margin: auto;
 }
 
@@ -13,5 +18,5 @@
 
 .faq {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), purple;
-  height: 580px;
+  height: 550px;
 }
