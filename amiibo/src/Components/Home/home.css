@@ -8,7 +8,7 @@
 }
 
 .background {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
     url(./asset/lineup.jpg);
   background-position: center;
   background-size: cover;
@@ -19,7 +19,7 @@
 }
 
 .content-container {
-  margin-top: 150px;
+  margin-top: 200px;
   color: white;
 }
 
@@ -32,6 +32,7 @@
 
 .content-container h1 span {
   color: #ffde59;
+  text-decoration: underline;
 }
 
 .content-container h3 {
@@ -79,6 +80,19 @@ button:hover {
   outline: none;
 }
 
+.btn-disc {
+  margin: 0;
+  width: 25%;
+  height: 5%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: purple;
+  color: white;
+  outline: none;
+}
+
 .section-cont {
   height: 100vh;
   color: black;
@@ -87,4 +101,12 @@ button:hover {
 .carousel-cont {
   margin-top: 10%;
   background-color: whitesmoke;
+}
+
+.animationHome {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  flex-wrap: wrap;
+  justify-content: center;
 }

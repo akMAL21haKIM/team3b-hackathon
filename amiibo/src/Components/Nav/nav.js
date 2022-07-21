@@ -13,6 +13,7 @@ const Nav = () => {
             <Link to="/">
               <img src={logo} />
             </Link>
+            <img />
           </div>
         </div>
         <div className="grid-item" id="grid-item-menu">
