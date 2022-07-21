@@ -22,7 +22,16 @@ const Discover = () => {
 
   const handleSearch = (res) => {
     res.preventDefault();
-    setData(dataSearch.filter((x) => x.name.includes(search)));
+    setData(
+      dataSearch.filter((x) =>
+        x.name.toLowerCase().includes(search.toLowerCase())
+      )
+    );
+    // setData(
+    //   dataSearch.filter((x) =>
+    //     x.character.toLowerCase().includes(search.toLowerCase())
+    //   )
+    // );
   };
 
   let getval = (x) => {
@@ -33,7 +42,7 @@ const Discover = () => {
     <div>
       <Navigation />
       <div className="discover-cont">
-        <h1>Discover your desired character</h1>
+        <h1>Discover your desired Series</h1>
         <div className="search d-flex">
           <div className="search d-flex">
             <input type="text" placeholder="Find Series" onChange={getval} />
