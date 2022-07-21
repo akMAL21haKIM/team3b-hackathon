@@ -6,7 +6,7 @@ import logo from "../Home/asset/logo3.png";
 const Nav = () => {
   const ref = useRef();
   return (
-    <div>
+    <div className="sticky">
       <div className="grid-container">
         <div className="grid-item-logo">
           <div className="logo">

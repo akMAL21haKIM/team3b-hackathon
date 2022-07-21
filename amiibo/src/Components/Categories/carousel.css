@@ -22,11 +22,11 @@
 .carousel-item > .item > img {
   margin: auto;
 }
-/*@media (max-width: 768px) {
-  .carousel-item {
-    max-width: 560px;
+@media (max-width: 768px) {
+  .carousel-item > img {
+    width: 100%;
   }
-}*/
+}
 
 .indicators {
   display: flex;
@@ -68,3 +68,21 @@
 .carousel-buttons button {
   margin-right: 10px;
 }
+
+.relative {
+  position: relative;
+}
+
+/*.absolute-left {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+}
+
+.absolute-right {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+}
+
+*/
