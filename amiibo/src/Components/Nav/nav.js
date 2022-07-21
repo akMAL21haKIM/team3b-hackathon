@@ -34,9 +34,6 @@ const Nav = () => {
             <Link to="/discover">
               <button id="discover-btn">Discover</button>
             </Link>
-            <Link to="/Discover">
-              <button id="news-btn">News</button>
-            </Link>
           </div>
         </div>
       </div>

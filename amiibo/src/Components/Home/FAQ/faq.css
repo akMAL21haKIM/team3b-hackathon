@@ -2,10 +2,15 @@
   justify-content: center;
   color: black;
   align-items: center;
-  margin: 15% auto 5%;
-  flex-direction: column;
+  justify-content: center;
+  margin: auto;
 }
 
 .faq-cont h1 {
-  color: purple;
+  color: white;
+}
+
+.faq {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), purple;
+  height: 580px;
 }
