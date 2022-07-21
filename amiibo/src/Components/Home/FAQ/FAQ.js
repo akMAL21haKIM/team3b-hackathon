@@ -18,7 +18,7 @@ const FAQ = () => {
       <div className="faq-cont">
         <br></br>
         <h1>FAQ</h1>
-        <div class="set-width">
+        <div className="set-width">
           <Grid columns={1}>
             <ExpansionPanel {...panel1Props} header="What does Amiibo do?">
               <Typography>

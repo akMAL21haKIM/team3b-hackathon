@@ -7,6 +7,7 @@ import Carousel, { CarouselItem } from "../Categories/Carousel";
 import animal_crossing from "./asset/animal_crossing.png";
 import legend_of_zelda from "./asset/legend_of_zelda.png";
 import super_mario from "./asset/super_mario.png";
+import { Link } from "react-router-dom";
 
 const image = [
   { id: animal_crossing },
@@ -37,10 +38,9 @@ const Home = () => {
               Horizons game.
             </h3>
             <br />
-            {/* <div className="search d-flex">
-              <input type="text" placeholder="Find character" />
-              <button onClick={handleSearch}>Search</button>
-            </div> */}
+            <Link to="/discover">
+              <button className="btn-disc">Start Discover Now</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -34,7 +34,7 @@ const Discover = () => {
       <Navigation />
       <div className="discover-cont">
         <br></br>
-        <h1>Discover your desired character</h1>
+        <h1>Discover your desired Series</h1>
         <div className="search d-flex">
           <input type="text" placeholder="Find Series" onChange={getval} />
           <button onClick={handleSearch}>Search</button>
