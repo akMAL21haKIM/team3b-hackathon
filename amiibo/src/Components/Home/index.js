@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./home.css";
 import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
@@ -73,7 +73,6 @@ const Home = () => {
         </div>
       </div>
       <FAQ />
-
       <Footer />
     </div>
   );
