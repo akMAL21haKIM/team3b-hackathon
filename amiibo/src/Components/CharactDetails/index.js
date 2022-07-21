@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Footer from "../Footer/footer";
 import "./character.css";
-import { useNavigate } from "react-router-dom";
 import Navigation from "../Nav/nav";
 
 const CharactDetails = () => {
+  //declaration
   const [data, setData] = useState([]);
-  var character = useParams().character;
+  var character = useParams().character; //call value passed from /details
   const defaultPic = "../Home/asset/untitleImg.jpg";
-  const navigation = useNavigate();
 
+  //call api for character
   useEffect(() => {
     axios
       .get("https://amiiboapi.com/api/amiibo/?character=" + character, {})

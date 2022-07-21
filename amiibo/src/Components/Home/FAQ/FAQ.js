@@ -10,7 +10,6 @@ const FAQ = () => {
     count: 4,
     defaultExpandedIndex: 0,
   });
-
   const [panel1Props, panelProps2, panel3Props, panel4Props] = panels;
 
   return (
