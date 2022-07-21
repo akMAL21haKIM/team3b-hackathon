@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
 import axios from "axios";
+import "./details.css";
 
 const Details = () => {
   var [data, setData] = useState([]);
@@ -45,18 +46,23 @@ const Details = () => {
           <input type="text" placeholder="Find Series" onChange={getval} />
           <button onClick={handleSearch}>Search</button>
         </div>
-        <h1>{name}</h1>
+        <h1>Series Choosen : {name}</h1>
         <div>
-          {data.map((res, index) => (
-            <button
-              key={index}
-              onClick={() => {
-                navigation(`/character/${res.character}`);
-              }}
-            >
-              {res.name}
-            </button>
-          ))}
+          <div className="grid-container-details">
+            {data.map((res, index) => (
+              <div className="grid-item-details" key={index}>
+                <button
+                  onClick={() => {
+                    navigation(`/character/${res.character}`);
+                  }}
+                >
+                  <img src={res.image} />
+                  <br />
+                  <h3>{res.name}</h3>
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <Footer />
