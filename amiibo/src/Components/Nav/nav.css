@@ -32,6 +32,7 @@
   padding-top: 15px !important;
 }
 
+/*navbar menu buttons*/
 .menu-buttons {
   text-align: right;
 }
@@ -48,6 +49,7 @@
   border-bottom: 4px solid purple;
 }
 
+/*Home nav button active*/
 .home-btn > button.active {
   background-color: initial;
   background-position: 0 0;
@@ -55,6 +57,7 @@
   opacity: 0.5;
 }
 
+/*Discover nav button active*/
 .discover-btn > button.active {
   background-color: initial;
   background-position: 0 0;
@@ -62,6 +65,7 @@
   opacity: 0.5;
 }
 
+/**/
 .grid-item__icon {
   display: none;
 }
