@@ -1,3 +1,10 @@
+/*FAQ main container*/
+.faq {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), purple;
+  height: 550px;
+}
+
+/*inner FAQ container*/
 .faq-cont {
   justify-content: center;
   color: black;
@@ -5,18 +12,14 @@
   margin: auto;
 }
 
-.set-width {
-  width: 50%;
-  margin: auto;
-}
-
 .faq-cont h1 {
   color: white;
 }
 
-.faq {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), purple;
-  height: 550px;
+/*width of FAQ menu*/
+.set-width {
+  width: 50%;
+  margin: auto;
 }
 
 @media (max-width: 800px) {
