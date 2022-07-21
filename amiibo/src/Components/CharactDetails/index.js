@@ -26,14 +26,6 @@ const CharactDetails = () => {
       <br></br>
       <h1>Characters related to {character}</h1>
       <br></br>
-      <button
-        className="btn-disc"
-        onClick={() => {
-          navigation(`/details/${character}`);
-        }}
-      >
-        Back
-      </button>
       <div className="grid-container-chara">
         {data.map((res, index) => (
           <div key={index}>

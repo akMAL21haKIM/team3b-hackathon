@@ -20,13 +20,17 @@ const Discover = () => {
       });
   }, []);
 
-  const handleSearch = (res) => {
-    res.preventDefault();
-    setData(dataSearch.filter((x) => x.name.includes(search)));
-  };
-
   let getval = (x) => {
     setSearch(x.target.value);
+  };
+
+  const handleSearch = (res) => {
+    res.preventDefault();
+    setData(
+      dataSearch.filter((x) =>
+        x.name.toLowerCase().includes(search.toLowerCase())
+      )
+    );
   };
 
   return (

@@ -31,11 +31,13 @@ const Home = () => {
         <div className="background">
           <div className="content-container">
             <h1>
-              WELCOME TO <span>AMIIBO WORLD</span>
+              KNOCK! KNOCK!
+              <br /> THIS IS <span>AMIIBO WORLD!</span>
             </h1>
             <h3>
-              Invite characters to your island in the Animal Crossing™: New
-              Horizons game.
+              Explore the world of amiibos with our extensive and limited
+              library for your enjoyment! Search and browse amiibos for you to
+              collect!
             </h3>
             <br />
             <Link to="/discover">
@@ -55,8 +57,23 @@ const Home = () => {
           })}
         </Carousel>
         <br />
+        <div className="animationHome">
+          <img
+            src="https://thumbs.gfycat.com/GlisteningEdibleAmericanriverotter-max-1mb.gif"
+            width={100}
+          />
+          <img
+            src="https://walking-link.neocities.org/running.gif"
+            width={100}
+          />
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/eb3b5a4f-6de2-4e44-8b57-ea55bc65fc86/dckxbxg-db6c8283-8e87-497b-92bc-f1f2be4a57cf.gif"
+            width={100}
+          />
+        </div>
       </div>
       <FAQ />
+
       <Footer />
     </div>
   );

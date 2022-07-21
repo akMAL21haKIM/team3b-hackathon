@@ -8,7 +8,7 @@
 }
 
 .background {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
     url(./asset/lineup.jpg);
   background-position: center;
   background-size: cover;
@@ -32,6 +32,7 @@
 
 .content-container h1 span {
   color: #ffde59;
+  text-decoration: underline;
 }
 
 .content-container h3 {
@@ -100,4 +101,12 @@ button:hover {
 .carousel-cont {
   margin-top: 10%;
   background-color: whitesmoke;
+}
+
+.animationHome {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  flex-wrap: wrap;
+  justify-content: center;
 }
