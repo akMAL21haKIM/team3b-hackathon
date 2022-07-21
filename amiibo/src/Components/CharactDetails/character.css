@@ -1,3 +1,4 @@
+/*main character container*/
 .grid-container-chara {
   display: flex;
   justify-content: center;
@@ -8,6 +9,7 @@
   /* min-height: 70%; */
 }
 
+/*character container*/
 .grid-item-chara {
   /* background-color: purple; */
   /* border: 1px solid rgba(0, 0, 0, 0.8); */

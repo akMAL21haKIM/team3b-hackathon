@@ -6,35 +6,36 @@ import axios from "axios";
 import "./details.css";
 
 const Details = () => {
+  //declaration
   var [data, setData] = useState([]);
-  var name = useParams().name;
+  var name = useParams().name; //to callback the value passed from /discover
   const navigation = useNavigate();
   const [dataSearch, setDataSearch] = useState([]);
   var [search, setSearch] = useState("");
 
+  //to call api and list
+  useEffect(() => {
+    axios
+      .get("https://amiiboapi.com/api/amiibo/?amiiboSeries=" + name, {})
+      .then(function (response) {
+        setData(response.data.amiibo); // array for display data
+        setDataSearch(response.data.amiibo); //  array for search function
+      });
+  }, []);
+
+  //for search input
   let getval = (x) => {
     setSearch(x.target.value);
   };
 
-  useEffect(() => {
-    axios
-      .get("https://amiiboapi.com/api/amiibo/?amiiboSeries=" + name, {})
-      .then(function (response) {
-        setData(response.data.amiibo);
-      });
-  }, []);
-
-  useEffect(() => {
-    axios
-      .get("https://amiiboapi.com/api/amiibo/?amiiboSeries=" + name, {})
-      .then(function (response) {
-        setDataSearch(response.data.amiibo);
-      });
-  }, []);
-
+  //to filter search
   const handleSearch = (res) => {
     res.preventDefault();
-    setData(dataSearch.filter((x) => x.name.includes(search)));
+    setData(
+      dataSearch.filter((x) =>
+        x.name.toLowerCase().includes(search.toLowerCase())
+      )
+    );
   };
 
   return (

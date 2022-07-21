@@ -7,6 +7,7 @@
   display: flex;
 }
 
+/*Big banner*/
 .background {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
     url(./asset/lineup.jpg);
@@ -18,6 +19,7 @@
   overflow: hidden;
 }
 
+/*Banner content*/
 .content-container {
   margin-top: 200px;
   color: white;
@@ -33,6 +35,7 @@
 .content-container h1 span {
   color: #ffde59;
   text-decoration: underline;
+  text-shadow: 0 5px 25px rgb(189, 45, 185);
 }
 
 .content-container h3 {
@@ -40,7 +43,45 @@
   padding: 0;
 }
 
-.search {
+/*discovering button*/
+.btn-disc {
+  margin: 0;
+  width: 25%;
+  height: 5%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: purple;
+  box-shadow: 0 5px 15px rgb(183, 141, 213);
+
+  color: white;
+  outline: none;
+}
+
+/*carousel container*/
+.carousel-cont {
+  margin-top: 10%;
+  background-color: whitesmoke;
+}
+
+/*animation gif*/
+.animationHome {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pikachuRun,
+.linkRun,
+.marioRun {
+  width: 100px;
+}
+
+/*unused search bar*/
+/* .search {
   border: 3px solid white;
   border-radius: 0.5rem;
   width: 50vh;
@@ -63,6 +104,7 @@ input {
   border: none;
 }
 
+
 button:hover {
   cursor: pointer;
   color: white;
@@ -78,35 +120,9 @@ button:hover {
   background-color: purple;
   color: white;
   outline: none;
-}
+} */
 
-.btn-disc {
-  margin: 0;
-  width: 25%;
-  height: 5%;
-  font-size: 1.3rem;
-  padding: 1rem;
-  outline: none;
-  border: none;
-  background-color: purple;
-  color: white;
-  outline: none;
-}
-
-.section-cont {
+/* .section-cont {
   height: 100vh;
   color: black;
-}
-
-.carousel-cont {
-  margin-top: 10%;
-  background-color: whitesmoke;
-}
-
-.animationHome {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 0fr);
-  flex-wrap: wrap;
-  justify-content: center;
-}
+} */

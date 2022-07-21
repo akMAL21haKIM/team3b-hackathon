@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./home.css";
 import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
@@ -37,7 +37,7 @@ const Home = () => {
             </h3>
             <br />
             <Link to="/discover">
-              <button className="btn-disc">Start Discover Now</button>
+              <button className="btn-disc">Start Discovering Now</button>
             </Link>
           </div>
         </div>
@@ -55,21 +55,20 @@ const Home = () => {
         <br />
         <div className="animationHome">
           <img
+            className="pikachuRun"
             src="https://thumbs.gfycat.com/GlisteningEdibleAmericanriverotter-max-1mb.gif"
-            width={100}
           />
           <img
+            className="linkRun"
             src="https://walking-link.neocities.org/running.gif"
-            width={100}
           />
           <img
+            className="marioRun"
             src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/eb3b5a4f-6de2-4e44-8b57-ea55bc65fc86/dckxbxg-db6c8283-8e87-497b-92bc-f1f2be4a57cf.gif"
-            width={100}
           />
         </div>
       </div>
       <FAQ />
-
       <Footer />
     </div>
   );

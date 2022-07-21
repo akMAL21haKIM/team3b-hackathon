@@ -3,6 +3,7 @@ h1 {
   margin: 0;
 }
 
+/*Main container*/
 .discover-cont {
   background-image: url("https://i.imgur.com/NGTcZ55.jpeg");
   color: rgba(117, 7, 117, 0.809);
@@ -10,6 +11,7 @@ h1 {
   justify-content: center;
 }
 
+/*search bar*/
 .search {
   border: 3px solid white;
   border-radius: 1rem;
@@ -33,12 +35,6 @@ input {
   border: none;
 }
 
-button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: rgba(181, 66, 185);
-}
-
 .search button {
   margin: 0;
   width: 30%;
@@ -51,30 +47,13 @@ button:hover {
   outline: none;
 }
 
-.discoverS {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(181, 66, 185);
 }
 
-.discoverS-btn {
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  justify-content: space-around;
-  font-size: 26px;
-  font-family: "Caveat Brush", cursive;
-  background-color: aliceblue;
-}
-
-.discoverS-btn:hover {
-  background-image: url("https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/others_3/amiibo_4/H2x1_Amiibo_main_image1600w.jpg");
-  box-shadow: 0 5px 15px rgba(145, 92, 182, 1);
-}
-
+/*main button container*/
 .grid-container-discover {
   display: flex;
   flex-direction: row;
@@ -83,6 +62,7 @@ button:hover {
   flex-wrap: wrap;
 }
 
+/*button conatainer*/
 .grid-item-discover {
   /* background-color: purple; */
   /* border: 1px solid rgba(0, 0, 0, 0.8); */
@@ -105,12 +85,6 @@ button:hover {
   color: purple;
 }
 
-@media (min-width: 600px) {
-  .grid-item-discover {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .grid-item-discover button:hover {
   transform: scale(1.1);
   color: purple;
@@ -119,4 +93,26 @@ button:hover {
 .grid-item-discover img {
   width: 200px;
   height: 250px;
+}
+
+/*image button*/
+.discoverS-btn {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  justify-content: space-around;
+  font-size: 26px;
+  font-family: "Caveat Brush", cursive;
+  background-color: aliceblue;
+}
+
+.discoverS-btn:hover {
+  background-image: url("https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/others_3/amiibo_4/H2x1_Amiibo_main_image1600w.jpg");
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 1);
+}
+
+@media (min-width: 600px) {
+  .grid-item-discover {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
