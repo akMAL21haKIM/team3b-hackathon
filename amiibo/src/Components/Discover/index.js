@@ -5,25 +5,29 @@ import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
 import "./discover.css";
 
+//declaration
 const Discover = () => {
   var [data, setData] = useState([]);
   const [dataSearch, setDataSearch] = useState([]);
   var [search, setSearch] = useState("");
   const navigation = useNavigate();
 
+  //to call api and list
   useEffect(() => {
     axios
       .get("https://amiiboapi.com/api/amiiboseries/", {})
       .then(function (response) {
-        setDataSearch(response.data.amiibo);
-        setData(response.data.amiibo);
+        setData(response.data.amiibo); // array for display data
+        setDataSearch(response.data.amiibo); //  array for search function
       });
   }, []);
 
+  //for search input
   let getval = (x) => {
     setSearch(x.target.value);
   };
 
+  //to filter search
   const handleSearch = (res) => {
     res.preventDefault();
     setData(
