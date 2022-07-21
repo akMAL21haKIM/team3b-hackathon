@@ -1,3 +1,4 @@
+/*main character container*/
 .grid-container-chara {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -7,6 +8,7 @@
   /* min-height: 70%; */
 }
 
+/*character container*/
 .grid-item-chara {
   /* background-color: purple; */
   /* border: 1px solid rgba(0, 0, 0, 0.8); */
