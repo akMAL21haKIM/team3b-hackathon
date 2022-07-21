@@ -7,7 +7,7 @@ const Nav = () => {
   const ref = useRef();
 
   return (
-    <div>
+    <div className="sticky">
       <div className="grid-container">
         <div className="grid-item-logo">
           <div className="logo">

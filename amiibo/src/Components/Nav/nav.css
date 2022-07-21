@@ -1,3 +1,9 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .d-flex {
   display: flex;
 }
@@ -6,7 +12,10 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 /*navbar content*/
@@ -19,11 +28,11 @@
   z-index: 1;
 }
 
-/*navbar logo*/
 .logo {
   text-align: left;
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 .logo img {
@@ -43,7 +52,7 @@
   font-size: 1rem;
   padding: 1rem;
   outline: none;
-  background-color: transparent;
+  background-color: white;
   color: black;
   border: none;
   border-bottom: 4px solid purple;
@@ -71,6 +80,10 @@
 }
 
 @media (max-width: 768px) {
+  .grid-item {
+    position: fixed;
+  }
+
   .logo img {
     width: 30%;
     padding-top: 15px !important;
@@ -91,6 +104,7 @@
   }
   .grid-item__icon {
     display: inline-block;
+    background-color: white;
   }
   .grid-item__icon div {
     width: 35px;
