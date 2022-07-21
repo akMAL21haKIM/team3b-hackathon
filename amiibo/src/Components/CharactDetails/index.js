@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
-import Navigation from "../Nav/nav";
 import Footer from "../Footer/footer";
 import "./character.css";
+import { useNavigate } from "react-router-dom";
+import Navigation from "../Nav/nav";
 
 const CharactDetails = () => {
   const [data, setData] = useState([]);
   var character = useParams().character;
   const defaultPic = "../Home/asset/untitleImg.jpg";
+  const navigation = useNavigate();
 
   useEffect(() => {
     axios
@@ -23,6 +25,7 @@ const CharactDetails = () => {
       <Navigation />
       <br></br>
       <h1>Characters related to {character}</h1>
+      <br></br>
       <div className="grid-container-chara">
         {data.map((res, index) => (
           <div key={index}>
