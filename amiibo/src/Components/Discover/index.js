@@ -43,10 +43,9 @@ const Discover = () => {
         <h3>Choose the series</h3>
         <div className="grid-container-discover">
           {data.map((res, index) => (
-            <div className="grid-item-discover">
+            <div className="grid-item-discover" key={index}>
               <button
                 className="discoverS-btn"
-                key={index}
                 onClick={() => {
                   navigation(`/details/${res.name}`);
                 }}

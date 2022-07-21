@@ -4,9 +4,14 @@
   display: center;
   align-items: center;
   justify-content: center;
-  margin: 15% auto 5%;
+  margin: auto;
 }
 
 .faq-cont h1 {
-  color: purple;
+  color: white;
+}
+
+.faq {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), purple;
+  height: 580px;
 }

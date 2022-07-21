@@ -76,7 +76,7 @@ button:hover {
   padding: 5px;
   margin: 5% auto;
   flex-wrap: wrap;
-  /* min-height: 70%; */
+  min-height: 70%;
 }
 
 .grid-item-discover {
