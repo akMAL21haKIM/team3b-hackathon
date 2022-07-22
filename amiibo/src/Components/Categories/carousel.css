@@ -72,17 +72,3 @@
 .relative {
   position: relative;
 }
-
-/*.absolute-left {
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-}
-
-.absolute-right {
-  position: absolute;
-  left: 0;
-  bottom: 50%;
-}
-
-*/
