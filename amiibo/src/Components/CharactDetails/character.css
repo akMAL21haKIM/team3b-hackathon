@@ -2,7 +2,7 @@
 .grid-container-chara {
   display: flex;
   justify-content: center;
-  /* grid-template-columns: auto auto auto; */
+
   padding: 5px;
   margin: 5% auto;
   flex-wrap: wrap;
@@ -10,8 +10,6 @@
 
 /*character container*/
 .grid-item-chara {
-  /* background-color: purple; */
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
   padding: 20px;
   width: 70%;
   margin: 0 auto 40px;
