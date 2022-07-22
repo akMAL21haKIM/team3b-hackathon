@@ -9,17 +9,10 @@ import legend_of_zelda from "./asset/legend_of_zelda.png";
 import super_mario from "./asset/super_mario.png";
 import { Link } from "react-router-dom";
 
+// for slides images
 const image = [{ id: pokemon }, { id: legend_of_zelda }, { id: super_mario }];
 
 const Home = () => {
-  const [dataSearch, setDataSearch] = useState([]);
-  var [search, setSearch] = useState("");
-
-  const handleSearch = (res) => {
-    res.preventDefault();
-    //setData(dataSearch.filter((x) => x.name.includes(search)));
-  };
-
   return (
     <div>
       <Navigation />
